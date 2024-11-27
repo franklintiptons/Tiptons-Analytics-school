@@ -97,13 +97,13 @@ class PackageResource extends Resource
 
                 // Price
                 Tables\Columns\TextColumn::make('price')
-                    ->label('Price')
-                    ->badge()
-                    ->colors([
-                        'success'
-                    ])
-                    ->money()  // Format as currency
-                    ->sortable(),
+                     ->icon('heroicon-o-currency-pound')
+                     ->badge()
+                     ->colors(['danger'])
+                     ->money('KES', true) // 'KES' for Kenyan Shillings
+                     ->sortable()
+                     ->label('Price'),
+
 
                 // Interval (e.g., monthly, yearly)
                 Tables\Columns\TextColumn::make('interval')

@@ -44,7 +44,6 @@ class AdminsRelationManager extends RelationManager
                     ->label('Admin Email'),
                 Tables\Columns\TextColumn::make('phone')
                     ->sortable()
-                    ->badge()
                     ->icon('heroicon-o-phone')
                     ->searchable()
                     ->label('Admin Phone'),
